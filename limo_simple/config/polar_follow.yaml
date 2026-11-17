@@ -1,0 +1,37 @@
+polar_follow:
+  ros__parameters:
+    k_rho: -0.6
+    k_alpha: 1.4
+    k_beta: -0.8
+    wheelbase: 0.24
+    v_max: 0.14
+    v_min: 0.04
+    gamma_max: 0.45
+    image_width: 640.0
+    lookahead_m: 0.45
+    lane_half_width_m: 0.35
+    k_black: 0.60
+    deadband: 0.02
+    lost_timeout_sec: 1.5
+    control_hz: 20.0
+    publish_gamma: true
+    gazebo_goal_ball: true
+    gazebo_ball_hz: 0.5
+    mission_nudge_max_rad: 0.65
+    mission_nudge_gain: 0.36
+    reach_tol_m: 0.12
+    offroad_stop_sec: 0.70
+    map_texture: ""  # Resolve the installed qcar_large_track texture.
+    map_size_x: 4.88
+    map_size_y: 6.2
+    map_black_max: 90
+    map_island_max_m: 0.10
+    # Tight corridors — stepping island edges OK; looser margin, vision owns steering.
+    circle_cx: 1.44
+    circle_cy: 2.11
+    circle_radius_m: 1.15
+    junction_cx: -0.35
+    junction_cy: 1.15
+    junction_radius_m: 0.85
+    map_island_max_circle_m: 0.50
+    require_mission: true

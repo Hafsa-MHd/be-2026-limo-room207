@@ -1,0 +1,12 @@
+road_vision:
+  ros__parameters:
+    image_topic: /rgb/image_raw
+    roi_top_frac: 0.40
+    black_threshold: 55
+    morph_kernel: 5
+    include_yellow: true
+    fill_specular: true
+    # Reject bright parking floor / walls (never treat as road).
+    white_v_min: 120
+    white_s_max: 60
+    save_path: ""
